@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Order-Sprinkle and Sweets Bakery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/special-order-animations.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/bread.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="image/logo(new).png" width="150" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="breads.html">Our Breads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="special_order.html">Special Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="special_order text-center page-hero">
+        <div class="container">
+            <h1 class="display-4 page-hero-title">Special Order</h1>
+            <p class="lead page-hero-subtitle">Create your perfect treats for any occasion</p>
+        </div>
+    </header>
+
+    <main class="special-order-main">
+        <section class="row mb-5 special-order-margin">
+            <div class="col-12">
+                <h2 class="text-center heading2 mb-4">Our Special Order Categories</h2>
+            </div>
+        
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="sbs-container sbs-category-image" style="background-image: url('image/wedding4.jpg');">
+                    <input type="radio" id="wedding" name="category" class="sbs-radio">
+                    <div class="sbs-category-body">
+                        <div class="sbs-category-title">Wedding</div>
+                        <div class="sbs-category-description">Exquisite wedding bread crafted to add elegance to your celebration</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="sbs-container sbs-category-image" style="background-image: url('image/birthday1.jpg');">
+                    <input type="radio" id="birthday" name="category" class="sbs-radio">
+                    <div class="sbs-category-body">
+                        <div class="sbs-category-title">Birthday Treats</div>
+                        <div class="sbs-category-description">Celebrate your special day with our delightful and festive birthday breads</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="sbs-container sbs-category-image" style="background-image: url('image/corporate_event_bread.jpg');">
+                    <input type="radio" id="events" name="category" class="sbs-radio">
+                    <div class="sbs-category-body">
+                        <div class="sbs-category-title">Corporate Events</div>
+                        <div class="sbs-category-description">Impress your clients and colleagues with our professional catering</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="special-order-container">
+            <div class="row">
+                <div class="col-md-6 order-reasons">
+                    <h2>Why Choose Our Special Orders?</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle icon"></i> Customized to your preferences</li>
+                        <li><i class="fas fa-leaf icon"></i> High-quality, fresh ingredients</li>
+                        <li><i class="fas fa-star icon"></i> Expert bakers with years of experience</li>
+                        <li><i class="fas fa-th-large icon"></i> Wide range of flavors and designs</li>
+                        <li><i class="fas fa-heart icon"></i> Attention to detail in every order</li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 testimonials-container">
+                    <h2>Customer Testimonials</h2>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide testimonial-card">
+                                <img src="image/chiquita.jpg" alt="Chiquita" class="profile-pic">
+                                <p class="testimonial">"Sprinkle and Sweets Bakery made the most beautiful and delicious wedding breads for us. It was exactly what we envisioned!"</p>
+                                <p class="customer-review">- Chiquita, Thailand</p>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <img src="image/ah_yeon.jpg" alt="Ah Yeon" class="profile-pic">
+                                <p class="testimonial">"The custom breads for our corporate event were a hit! Professional service and outstanding quality."</p>
+                                <p class="customer-review">- Ah Yeon, KPOP Singer</p>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <img src="image/karina.jpg" alt="Karina" class="profile-pic">
+                                <p class="testimonial">"Their attention to detail and creativity made my daughter's birthday bread absolutely perfect!"</p>
+                                <p class="customer-review">- Karina, Influencer</p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+                
+
+        
+        <div class="container special-order-bottom-section">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="order-steps">
+                        <h2>How It Works</h2>
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Choose Your Items</h3>
+                            <p>Select from our range of artisanal breads and pastries</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Customize</h3>
+                            <p>Specify your requirements and any special instructions</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Place Order</h3>
+                            <p>Submit your order and we'll contact you to confirm details</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-contact-card">
+                        <h3><i class="fas fa-phone-alt"></i> Need Help?</h3>
+                        <p>Our team is here to assist you with your custom order</p>
+                        <a href="tel:012-34567899" class="btn btn-primary btn-block">Call Us</a>
+                        <a href="mailto:sprinkleandsweetsbakery@email.com" class="btn btn-outline-primary btn-block btn-email-us">Email Us</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8">
+                    <form id="custom-order-form" class="needs-validation" novalidate>
+                        <div class="form-card">
+                            <h2>Order Details</h2>
+                            
+                            <div class="form-row">
+                                <div class="form-group form-margin col-md-6">
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" class="form-control" id="fullname" placeholder="Enter your full name here " required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email here " required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number here " required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="occasion">Occasion</label>
+                                    <select class="form-control form-margin" id="occasion" required>
+                                        <option value="">Select Occasion</option>
+                                        <option value="wedding">Wedding</option>
+                                        <option value="birthday">Birthday</option>
+                                        <option value="corporate">Corporate Event</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="breadType">Bread Type</label>
+                                    <select class="form-control" id="breadType" required>
+                                        <option value="">Select Bread Type</option>
+                                        <option value="wholegrain">Wholegrain Bread</option>
+                                        <option value="white">White Bread</option>
+                                        <option value="sourdough">Sourdough</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="quantity">Quantity</label>
+                                    <input type="number" class="form-control" id="quantity" min="1" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="deliveryOption">Delivery Option</label>
+                                    <select class="form-control" id="deliveryOption" required>
+                                        <option value="">Select delivery option</option>
+                                        <option value="pickup">Pick Up</option>
+                                        <option value="delivery">Delivery</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="preferredDate">Preferred Date</label>
+                                    <input type="date" class="form-control" id="preferredDate" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group" id="deliveryAddressGroup" style="display: none;">
+                                <label for="deliveryAddress">Delivery Address</label>
+                                <textarea class="form-control" id="deliveryAddress" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="specialInstructions">Special Instructions</label>
+                                <textarea class="form-control" id="specialInstructions" placeholder="Enter the special instruction you want here" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customMessage">Custom Message</label>
+                                <textarea class="form-control" id="customMessage" placeholder="Enter the custom message you want here" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-buttons">
+                                <button type="submit" class="btn btn-primary">Place Order</button>
+                                <button type="reset" class="btn btn-outline-secondary">Clear Form</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h5>About Us</h5>
+                <hr class="light">
+                <p>At Sprinkle and Sweets Bakery, we are committed to sustainability using organic ingredients from local farmers.</p>
+                <p>We prioritize eco-friendly practices and support our community.</p>
+            </div>
+            <div class="footer-section">
+                <h5>Contact Info</h5>
+                <hr class="light">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 1, Jalan Kebudayaan 2, Taman Universiti, 81300 Johor Bahru</li>
+                    <li><a href="tel:012-34567899"><i class="fa-solid fa-phone"></i> 012-34567899</a></li>
+                    <li><a href="mailto:sprinkleandsweetsbakery@email.com"><i class="fa-regular fa-envelope"></i> sprinkleandsweetsbakery@email.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Hours</h5>
+                <hr class="light">
+                <ul>
+                    <li>Monday-Friday: 9am to 6pm</li>
+                    <li>Saturday: 10am to 4pm</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <hr class="light">
+                <ul class="quick-links">
+                    <li><b><a href="about.html">About Us</a></b></li>
+                    <li><b><a href="contact.html">Contact Us</a></b></li>
+                    <li><b><a href="breads.html">Breads</a></b></li>
+                    <li><b><a href="location.html">Locate Us</a></b></li>
+                    <li><b><a href="special_order.html">Special Order</a></b></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/login"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p>&copy; 2024 Sprinkle and Sweets Bakery</p>
+            </div>
+        </footer>
+</body>
+</html>

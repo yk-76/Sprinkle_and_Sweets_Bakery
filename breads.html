@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Breads-Sprinkle and Sweets Bakery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/bread.js"></script>
+    
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="image/logo(new).png" width="150" height="150" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="breads.html">Our Breads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="special_order.html">Special Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="special_order about-hero page-hero">
+        <div class="container text-center">
+            <h1 class="display-4 page-hero-title">Our Bread</h1>
+            <p class="lead page-hero-subtitle">Every Loaf Made with Love and Tradition</p>
+        </div>
+    </header>
+
+    
+    <div class="bread-search-container">
+        <div class="bread-search">
+            <input type="text" id="bread-search" placeholder="Search for a bread...">
+            <i class="fa-solid fa-magnifying-glass search-icon "></i>
+        </div>
+        
+        <div class="bread-sort">
+            <select name="sort" id="sort">
+                <option value="">Please select your sort terms</option>
+                <option value="Price">Price</option>
+                <option value="Bread Type">Bread Type</option>
+                <option value="Rating">Rating</option>
+            </select>
+        </div>
+        <div class="bread-filter">
+            <button><i class="fa-solid fa-filter"></i> Filter: All</button>
+        </div>   
+    </div>
+
+    <div class="bread-category-nav">
+        <button onclick="filterCategory('all')" class="btn-cart">All</button>
+        <button onclick="filterCategory('classic')" class="btn-cart">Classic</button>
+        <button onclick="filterCategory('italy')" class="btn-cart">Italy</button>
+        <button onclick="filterCategory('specialty')" class="btn-cart">Specialty</button>
+    </div>
+
+
+    <div class="body">
+        <h2 class="heading2">Classic</h2>
+        <div class="bread-container">
+            <section class="catalog-section">
+            <div class="bread-grid">
+                <div class="bread-item">
+                    <div class="bread-image">
+                        <img src="image/species_sweet_pastry_bread.jpg" alt="Sweet Pastry">
+                        <div class="read-more">
+                            <button class="btn btn-light read-more-button" data-bread="sweet_pastry">Read More</button>
+                        </div>
+                    </div>
+                    <div class="bread-info">
+                        <h3>Sweet Pastry</h3>
+                        <p class="price_tag">RM4.00 - RM8.00</p>
+                        <p class="availability">Available</p>
+                        <p class="button_add_to_cart">4.6<i class="fa fa-star"></i></p>
+                        <button class="btn btn-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/species_sourdough_bread.jpg" alt="Sourdough Bread">
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="sourdough">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Sourdough Bread</h3>
+                    <p class="price_tag">RM4.00</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.5<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/species_white_bread.jpg" alt="White Bread">
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="white_bread">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>White Bread</h3>
+                    <p class="price_tag">RM2.60</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.4<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Wholegrain Bread -->
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/species_wholegrain_bread.jpg" alt="Wholegrain Bread">
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" id="wholegrain_bread" data-bread="wholegrain_bread">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Wholegrain Bread</h3>
+                    <p class="price_tag">RM 3.50</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.3<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Baguette -->
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/species_baguette.jpg" alt="Baguette">
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="baguette">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Classic Baguette</h3>
+                    <p class="price_tag">RM8.00</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.1<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                    
+                </div>
+            </div>
+    
+            <!-- Ciabatta -->
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/species_Ciabatta_bread.jpg" alt="Ciabatta">
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="ciabatta">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Ciabatta</h3>
+                    <p class="price_tag">RM4.20</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.2<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>
+
+<div class="body">
+    <h2 class="heading2">Flavour from Italy</h2>
+    <div class="bread-container">
+        <div class="bread-grid">
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/ourBread_Michetta_bread.jpeg" alt="Michetta Bread">
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="michetta">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Michetta Bread</h3>
+                    <p class="price_tag">RM4.10</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.3<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/ourBread_Panino_all'olio.webp" alt="Panino all'olio">
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="panino_all_olio">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Panino all'olio</h3>
+                    <p class="price_tag">RM3.50</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.4<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/ourBread_Pizza_Bianca.webp" alt="Pizza Bianca">
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="pizza_bianca">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Pizza Bianca</h3>
+                    <p class="price_tag">RM4.50</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.5<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                    
+                </div>
+            </div>
+
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/grisinni.jpg" alt="Grissini">
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="grissini_torinesi">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Grissini</h3>
+                    <p class="price_tag">RM3.50</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.3<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bread-item" data-bread="fresella">
+                <div class="bread-image">
+                    <img src="image/ourBread_Fresella.webp" alt="Fresella">
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="fresella">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Fresella</h3>
+                    <p class="price_tag">RM4.50</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.2<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body">
+    <!-- Specialty Breads -->
+    <h2 class="heading2">Specialty Bread</h2>
+    <div class="bread-container">
+        <div class="bread-grid">
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/specialty_kaya_toast.jpg" alt="Kaya Toast">
+                    <div class="hot-label">NEW</div>
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="kaya_toast">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Kaya Toast</h3>
+                    <p class="price_tag">RM5.50</p>
+                    <p class="price_tag">Morning delights in October!</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.5<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/specialty_curry_bun.jpg" alt="Curry Bun">
+                    <div class="hot-label">NEW</div>
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="curry_bun">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Curry Bun</h3>
+                    <p class="price_tag">RM4.30</p>
+                    <p class="price_tag">Only Available In October!</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.7<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/specialty_coffee_bun.webp" alt="Coffee Bun">
+                    <div class="hot-label">NEW</div>
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="coffee_bun">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Coffee Bun</h3>
+                    <p class="price_tag">RM4.00</p>
+                    <p class="price_tag">Only Available In October!</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.6<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="bread-item">
+                <div class="bread-image">
+                    <img src="image/specialty_red_bean.jpg" alt="Red Bean">
+                    <div class="hot-label">NEW</div>
+                    <div class="read-more">
+                        <button class="btn btn-light read-more-button" data-bread="red_bean_bun">Read More</button>
+                    </div>
+                </div>
+                <div class="bread-info">
+                    <h3>Red Bean Bun</h3>
+                    <p class="price_tag">RM4.10</p>
+                    <p class="price_tag">Only Available In October!</p>
+                    <p class="availability">Available</p>
+                    <p class="button_add_to_cart">4.3<i class="fa-solid fa-star"></i></p>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>   
+        </div>
+    </section>
+    </div>
+</div>
+
+    <div id="bread-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-bread-content">
+                
+            </div>
+        </div>
+    </div>  
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h5>About Us</h5>
+                <hr class="light">
+                <p>At Sprinkle and Sweets Bakery, we are committed to sustainability using organic ingredients from local farmers.</p>
+                <p>We prioritize eco-friendly practices and support our community.</p>
+            </div>
+            <div class="footer-section">
+                <h5>Contact Info</h5>
+                <hr class="light">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 1, Jalan Kebudayaan 2, Taman Universiti, 81300 Johor Bahru</li>
+                    <li><a href="tel:012-34567899"><i class="fa-solid fa-phone"></i> 012-34567899</a></li>
+                    <li><a href="mailto:sprinkleandsweetsbakery@email.com"><i class="fa-regular fa-envelope"></i> sprinkleandsweetsbakery@email.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Hours</h5>
+                <hr class="light">
+                <ul>
+                    <li>Monday-Friday: 9am to 6pm</li>
+                    <li>Saturday: 10am to 4pm</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <hr class="light">
+                <ul class="quick-links">
+                    <li><b><a href="about.html">About Us</a></b></li>
+                    <li><b><a href="contact.html">Contact Us</a></b></li>
+                    <li><b><a href="breads.html">Breads</a></b></li>
+                    <li><b><a href="location.html">Locate Us</a></b></li>
+                    <li><b><a href="special_order.html">Special Order</a></b></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/login"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2024 Sprinkle and Sweets Bakery</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
